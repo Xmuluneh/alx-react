@@ -1,6 +1,6 @@
 # Learning Objectives
 
-<p>At the end of this project, you are expected to be able to explain to anyone, without the help of Google:</p>
+<p>At the end of this project, you are <a href="https://fs.blog/feynman-learning-technique/">expected</a> <strong>to be able to explain to anyone, without the help of Google</strong>:</p>
 <ul>
 <li>How to setup Webpack for a basic project</li>
 <li>Entry points, output, and loaders</li>
