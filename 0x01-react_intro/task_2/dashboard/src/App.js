@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {getFullYear,getFooterCopy} from './utile'
+import {getFooterCopy,getFullYear} from './utils'
 function App() {
   return (
     <div className="App">
@@ -11,17 +11,18 @@ function App() {
     <div className="App-body">
       <p>Login to access the full dashboard</p>
       <form>
-      <label htmlFor='email'>Email</label>
-      <input type='email' id ="email"></input>
-      <label htmlFor='password'>password</label>
-      <input type='password' id='pass'></input>
-      <button>OK</button>
+        <label htmlFor='email'>Email</label>
+        <input id='email' type='email'></input>
+        <label htmlFor='password'>password</label>
+        <input id='password' type='password'></input>
+         <button>OK</button>
       </form>
     </div>
     <div className="App-footer">
-      <p>Copyright {getFullYear} - {getFooterCopy}</p>
+      <p>Copyright {getFullYear()} - {getFooterCopy()}</p>
     </div>
     </div>
+  
   );
 }
 
