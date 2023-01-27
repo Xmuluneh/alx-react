@@ -1,21 +1,18 @@
-import {getFullYear,getFooterCopy,getLatestNotification} from './utils.js'
+import {getFooterCopy,  getFullYear,  getLatestNotification} from './utils'
 
-test('getFullYear to equal 2023',()=>{
+test('getFullYear return the current year',()=>{
     expect(getFullYear()).toBe(2023)
 });
-
-test('return the Holberton',() =>{
-    expect(getFooterCopy(true)).toBe('Holberton School')
-});
-test('return the Holberton School main dashboard',()=>{
-    expect(getFooterCopy(false)).toBe('Holberton School main dashboard')
+test('return the Holberton School is true',()=>{
+      expect(getFooterCopy(true)).toBe('Holberton School')
 });
 
-test('return the string',()=>{
-    expect(typeof getLatestNotification()).toBe(String)
+test('return the Holberton School main dashboard is false',()=>{
+    expect(getFooterCopy(false)).toBe('Holberton School main dashoard')
 });
-
-
-test('return a given string',()=>{
-    expect(getFooterCopy()).toBe('<strong>Urgent requirement</strong> - complete by EOD')
+test("returns string", () => {
+    expect(typeof getLatestNotification()).toBe("string");
+})
+test("returns a specific string", () => {
+    expect(getLatestNotification()()).toBe("<strong>Urgent requirement</strong> - complete by EOD");
 })
