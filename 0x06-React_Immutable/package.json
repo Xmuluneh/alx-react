@@ -14,6 +14,18 @@
     "eslint-plugin-jest": "^22.17.0",
     "jest": "^24.9.0"
   },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "no-unused-vars": [
+        "warn",
+        {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_"
+        }
+      ]
+    }
+  },
   "dependencies": {
     "immutable": "^4.0.0-rc.12"
   }

@@ -1,4 +1,4 @@
-import { Map } from './node_modules/immutable/dist/immutable';
+import { Map } from 'immutable';
 
 const getImmutableObject = (obj) => {
   Map(obj);
