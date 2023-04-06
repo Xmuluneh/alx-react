@@ -1,4 +1,11 @@
 {
+  "name": "0x00-webpack",
+  "description": "0x00. Webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+
+
+
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "webpack": "^5.78.0",
@@ -7,10 +14,7 @@
   "dependencies": {
     "jquery": "^3.6.4"
   },
-  "name": "0x00-webpack",
-  "description": "0x00. Webpack",
-  "version": "1.0.0",
-  "main": "index.js",
+ 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
