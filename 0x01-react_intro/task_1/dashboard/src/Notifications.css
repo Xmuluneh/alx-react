@@ -1,4 +1,4 @@
-.Notifications{
-    padding: 5rem;
-    border: 3px;
+.Notifications {
+  border: 3px dotted red;
+  padding: 5rem;
 }
